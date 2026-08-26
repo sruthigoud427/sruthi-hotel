@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery | Sruthi Hotel</title>
+  <meta name="description" content="Explore our visual gallery featuring 24+ luxury images of Sruthi Hotel. Discover our grand entrance, opulent suites, Michelin-star dining, and serene gardens.">
+  <link rel="stylesheet" href="css/fontawesome/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-left">
+        <div class="topbar-item"><i class="fa-solid fa-location-dot"></i> 742 Grand Boulevard, Luxury Avenue</div>
+        <div class="topbar-item"><i class="fa-solid fa-phone"></i> +1 (800) 555-SRUTHI</div>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-item"><i class="fa-solid fa-camera"></i> 24+ High-Definition Visuals</div>
+        <div class="topbar-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-emblem">S</div>
+        <div class="brand-text">
+          <span class="brand-name">SRUTHI <span>HOTEL</span></span>
+          <span class="brand-sub">Luxury & Suites</span>
+        </div>
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="rooms.html" class="nav-link">Rooms</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="whychooseus.html" class="nav-link">Why Choose Us</a>
+        <a href="booking-contact.html" class="nav-link">Booking & Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="booking-contact.html" class="btn btn-gold btn-sm">Book Now</a>
+        <button class="hamburger-btn" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="brand-emblem">S</div>
+        <div class="brand-text"><span class="brand-name">SRUTHI <span>HOTEL</span></span></div>
+      </div>
+      <button class="drawer-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="rooms.html" class="drawer-link">Rooms & Suites</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+      <a href="gallery.html" class="drawer-link active">Photo Gallery</a>
+      <a href="services.html" class="drawer-link">Our Services</a>
+      <a href="whychooseus.html" class="drawer-link">Why Choose Us</a>
+      <a href="booking-contact.html" class="drawer-link">Booking & Contact</a>
+    </nav>
+  </aside>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="background-image: url('images/photo-1542314831-068cd1dbfeeb.jpg');">
+    <div class="banner-content">
+      <span class="section-tag">Visual Opulence</span>
+      <h1 class="section-title">The Masterpiece <span class="gold-gradient-text">Gallery</span></h1>
+      <p class="section-desc">
+        Take a visual tour through our grand lobby, majestic suites, Michelin-star dining spaces, lush botanic gardens, and premier wellness facilities.
+      </p>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+        <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Showcase with Filter Tabs & Lightbox Trigger -->
+  <section class="section-padding" style="background: var(--bg-dark);">
+    <div class="container">
+      
+      <!-- Category Filter Tabs (Rooms, Lobby, Restaurant, Entrance, Garden, Reception, Facilities) -->
+      <div class="filter-container">
+        <button class="filter-btn gallery-filter-btn active" data-filter="all">All (24)</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="rooms">Rooms & Suites</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="lobby">Lobby</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="restaurant">Restaurant</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="entrance">Entrance</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="garden">Garden</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="reception">Reception</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="facilities">Facilities</button>
+      </div>
+
+      <!-- 24 High-Definition Image Cards with Lightbox Data -->
+      <div class="gallery-grid">
+        
+        <!-- Category: ENTRANCE -->
+        <div class="gallery-item" data-category="entrance" data-title="Grand Hotel Entrance at Twilight">
+          <img src="images/photo-1542314831-068cd1dbfeeb.jpg" alt="Grand Hotel Entrance">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Grand Hotel Entrance</div>
+            <div class="gallery-category-badge">Entrance</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="entrance" data-title="Illuminated Royal Porte-Cochère">
+          <img src="images/photo-1566073771259-6a8506099945.jpg" alt="Royal Porte-Cochere">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Royal Porte-Cochère</div>
+            <div class="gallery-category-badge">Entrance</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="entrance" data-title="Fountain Courtyard Approach">
+          <img src="images/photo-1571003123894-1f0594d2b5d9.jpg" alt="Fountain Courtyard Approach">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Fountain Courtyard Approach</div>
+            <div class="gallery-category-badge">Entrance</div>
+          </div>
+        </div>
+
+        <!-- Category: LOBBY -->
+        <div class="gallery-item" data-category="lobby" data-title="Crystal Chandelier Grand Lobby">
+          <img src="images/photo-1582719478250-c89cae4dc85b.jpg" alt="Crystal Chandelier Grand Lobby">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Grand Atrium Lobby</div>
+            <div class="gallery-category-badge">Lobby</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="lobby" data-title="Velvet Fireplace Lounge">
+          <img src="images/photo-1584132967334-10e028bd69f7.jpg" alt="Velvet Fireplace Lounge">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Velvet Fireplace Lounge</div>
+            <div class="gallery-category-badge">Lobby</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="lobby" data-title="Italian Marble Colonnade">
+          <img src="images/photo-1568495248636-6432b97bd949.jpg" alt="Italian Marble Colonnade">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Italian Marble Colonnade</div>
+            <div class="gallery-category-badge">Lobby</div>
+          </div>
+        </div>
+
+        <!-- Category: RECEPTION -->
+        <div class="gallery-item" data-category="reception" data-title="24/7 VIP Concierge & Reception Desk">
+          <img src="images/photo-1590381105924-c72589b9ef3f.jpg" alt="VIP Concierge & Reception">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">VIP Reception Desk</div>
+            <div class="gallery-category-badge">Reception</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="reception" data-title="Private Member Check-in Salon">
+          <img src="images/photo-1600585154340-be6161a56a0c.jpg" alt="Member Check-in Salon">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Private Member Check-in</div>
+            <div class="gallery-category-badge">Reception</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="reception" data-title="Concierge Executive Gallery">
+          <img src="images/photo-1574643156929-51fa098b0394.jpg" alt="Concierge Executive Gallery">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Executive Concierge Gallery</div>
+            <div class="gallery-category-badge">Reception</div>
+          </div>
+        </div>
+
+        <!-- Category: ROOMS -->
+        <div class="gallery-item" data-category="rooms" data-title="Presidential Royal Suite Master Bedroom">
+          <img src="images/photo-1618773928121-c32242e63f39.jpg" alt="Presidential Master Bedroom">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Presidential Royal Bedroom</div>
+            <div class="gallery-category-badge">Rooms & Suites</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="rooms" data-title="Executive Oceanfront Suite Lounge">
+          <img src="images/photo-1590490360182-c33d57733427.jpg" alt="Executive Oceanfront Suite Lounge">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Executive Oceanfront Lounge</div>
+            <div class="gallery-category-badge">Rooms & Suites</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="rooms" data-title="Deluxe King Botanical Bedroom">
+          <img src="images/photo-1578683010236-d716f9a3f461.jpg" alt="Deluxe King Bedroom">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Deluxe King Garden Room</div>
+            <div class="gallery-category-badge">Rooms & Suites</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="rooms" data-title="Romantic Four-Poster Honeymoon Suite">
+          <img src="images/photo-1591088398332-8a7791972843.jpg" alt="Honeymoon Suite">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Signature Honeymoon Suite</div>
+            <div class="gallery-category-badge">Rooms & Suites</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="rooms" data-title="Family Residence Dual Bedroom">
+          <img src="images/photo-1596394516093-501ba68a0ba6.jpg" alt="Family Residence Dual Bedroom">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Family Grand Residence</div>
+            <div class="gallery-category-badge">Rooms & Suites</div>
+          </div>
+        </div>
+
+        <!-- Category: RESTAURANT -->
+        <div class="gallery-item" data-category="restaurant" data-title="The Golden Palm Fine Dining Room">
+          <img src="images/photo-1517248135467-4c7edcad34c4.jpg" alt="The Golden Palm Restaurant">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">The Golden Palm Dining</div>
+            <div class="gallery-category-badge">Restaurant</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="restaurant" data-title="Artisan Cocktail & Champagne Bar">
+          <img src="images/photo-1551024709-8f23befc6f87.jpg" alt="Artisan Cocktail Bar">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Amber Champagne Lounge</div>
+            <div class="gallery-category-badge">Restaurant</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="restaurant" data-title="Gourmet Breakfast Buffet Spread">
+          <img src="images/photo-1533089860892-a7c6f0a88666.jpg" alt="Gourmet Breakfast Buffet">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Gourmet Breakfast Buffet</div>
+            <div class="gallery-category-badge">Restaurant</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="restaurant" data-title="Private Candlelit Dining Room">
+          <img src="images/photo-1544025162-d76694265947.jpg" alt="Private Dining Room">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Private Wine Cellar Table</div>
+            <div class="gallery-category-badge">Restaurant</div>
+          </div>
+        </div>
+
+        <!-- Category: GARDEN -->
+        <div class="gallery-item" data-category="garden" data-title="Botanical Courtyard & Water Lily Pond">
+          <img src="images/photo-1585320806297-9794b3e4eeae.jpg" alt="Botanical Courtyard">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Botanical Courtyard</div>
+            <div class="gallery-category-badge">Garden</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="garden" data-title="Palace Rose Garden Walkway">
+          <img src="images/photo-1598902108854-10e335adac99.jpg" alt="Palace Rose Garden">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Palace Rose Walkway</div>
+            <div class="gallery-category-badge">Garden</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="garden" data-title="Moonlight Pavilion Gazebo">
+          <img src="images/photo-1513836279014-a89f7a76ae86.jpg" alt="Moonlight Pavilion">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Moonlight Pavilion</div>
+            <div class="gallery-category-badge">Garden</div>
+          </div>
+        </div>
+
+        <!-- Category: FACILITIES -->
+        <div class="gallery-item" data-category="facilities" data-title="Rooftop Sunset Infinity Pool">
+          <img src="images/photo-1571896349842-33c89424de2d.jpg" alt="Rooftop Infinity Pool">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Rooftop Infinity Pool</div>
+            <div class="gallery-category-badge">Facilities</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="facilities" data-title="Aura Luxury Hydrotherapy Spa">
+          <img src="images/photo-1540555700478-4be289fbecef.jpg" alt="Aura Luxury Hydrotherapy Spa">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Aura Hydro Spa</div>
+            <div class="gallery-category-badge">Facilities</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="facilities" data-title="The Grand Imperial Ballroom">
+          <img src="images/photo-1519167758481-83f550bb49b3.jpg" alt="The Grand Imperial Ballroom">
+          <div class="gallery-overlay">
+            <div class="gallery-icon-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="gallery-title">Imperial Ballroom & Gala</div>
+            <div class="gallery-category-badge">Facilities</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Lightbox Modal -->
+  <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Preview">
+    <div class="lightbox-container">
+      <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <button class="lightbox-nav-btn lightbox-prev" aria-label="Previous Image"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="lightbox-nav-btn lightbox-next" aria-label="Next Image"><i class="fa-solid fa-chevron-right"></i></button>
+      
+      <div class="lightbox-img-wrap">
+        <img src="" alt="Enlarged view" class="lightbox-img">
+      </div>
+      
+      <div class="lightbox-caption">
+        <h3 class="lightbox-title"></h3>
+        <span class="lightbox-category"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner-content">
+      <span class="section-tag">Picture Yourself Here</span>
+      <h2>Turn These Views Into Your <span class="gold-gradient-text">Reality</span></h2>
+      <p style="color: var(--text-muted); margin-bottom: 30px;">
+        Reserve your preferred suite today and experience every corner of our magnificent property in person.
+      </p>
+      <a href="booking-contact.html" class="btn btn-gold"><i class="fa-solid fa-calendar-check"></i> Book Your Stay</a>
+    </div>
+  </section>
+
+  <!-- Luxury Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-emblem">S</div>
+          <div class="brand-text">
+            <span class="brand-name">SRUTHI <span>HOTEL</span></span>
+            <span class="brand-sub">Luxury & Suites</span>
+          </div>
+        </a>
+        <p>A landmark of opulence and discrete hospitality. Capturing indelible moments across all our suites, lounges, gardens, and dining venues.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms & Suites</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="whychooseus.html">Why Choose Us</a></li>
+          <li><a href="booking-contact.html">Booking & Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Gallery Categories</h4>
+        <ul class="footer-links">
+          <li><a href="gallery.html">Grand Entrance</a></li>
+          <li><a href="gallery.html">Crystal Atrium Lobby</a></li>
+          <li><a href="gallery.html">Luxury Suites & En-suites</a></li>
+          <li><a href="gallery.html">The Golden Palm Restaurant</a></li>
+          <li><a href="gallery.html">Botanic Courtyards & Pools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Direct Concierge</h4>
+        <p>For high-resolution photography requests or private media shoots, please contact our PR team.</p>
+        <ul class="footer-contact" style="margin-top: 15px;">
+          <li><i class="fa-solid fa-phone"></i> +1 (800) 555-SRUTHI</li>
+          <li><i class="fa-solid fa-envelope"></i> press@sruthihotel.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div>&copy; 2026 <strong>Sruthi Hotel</strong>. All Rights Reserved.</div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

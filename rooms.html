@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Rooms & Suites | Sruthi Hotel</title>
+  <meta name="description" content="Explore our 10 exquisite luxury rooms and suites at Sruthi Hotel. Featuring Emperor beds, marble jacuzzi baths, and breathtaking views.">
+  <link rel="stylesheet" href="css/fontawesome/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-left">
+        <div class="topbar-item"><i class="fa-solid fa-location-dot"></i> 742 Grand Boulevard, Luxury Avenue</div>
+        <div class="topbar-item"><i class="fa-solid fa-phone"></i> +1 (800) 555-SRUTHI</div>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-item"><i class="fa-solid fa-clock"></i> 24/7 VIP Concierge Desk</div>
+        <div class="topbar-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-emblem">S</div>
+        <div class="brand-text">
+          <span class="brand-name">SRUTHI <span>HOTEL</span></span>
+          <span class="brand-sub">Luxury & Suites</span>
+        </div>
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="rooms.html" class="nav-link active">Rooms</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="whychooseus.html" class="nav-link">Why Choose Us</a>
+        <a href="booking-contact.html" class="nav-link">Booking & Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="booking-contact.html" class="btn btn-gold btn-sm">Book Now</a>
+        <button class="hamburger-btn" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="brand-emblem">S</div>
+        <div class="brand-text"><span class="brand-name">SRUTHI <span>HOTEL</span></span></div>
+      </div>
+      <button class="drawer-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="rooms.html" class="drawer-link active">Rooms & Suites</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+      <a href="gallery.html" class="drawer-link">Photo Gallery</a>
+      <a href="services.html" class="drawer-link">Our Services</a>
+      <a href="whychooseus.html" class="drawer-link">Why Choose Us</a>
+      <a href="booking-contact.html" class="drawer-link">Booking & Contact</a>
+    </nav>
+  </aside>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="background-image: url('images/photo-1590490360182-c33d57733427.jpg');">
+    <div class="banner-content">
+      <span class="section-tag">Sanctuaries of Refinement</span>
+      <h1 class="section-title">Rooms & <span class="gold-gradient-text">Luxury Suites</span></h1>
+      <p class="section-desc">
+        Designed with meticulous attention to detail, each accommodation combines lavish Italian marble, bespoke designer furnishings, and state-of-the-art comforts.
+      </p>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+        <span>Rooms & Suites</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms Showcase Section with Filter Tabs -->
+  <section class="section-padding" style="background: var(--bg-dark);">
+    <div class="container">
+      
+      <!-- Category Filter Tabs -->
+      <div class="filter-container">
+        <button class="filter-btn room-filter-btn active" data-filter="all">All Accommodations (10)</button>
+        <button class="filter-btn room-filter-btn" data-filter="deluxe">Deluxe Rooms</button>
+        <button class="filter-btn room-filter-btn" data-filter="suites">Luxury Suites</button>
+        <button class="filter-btn room-filter-btn" data-filter="executive">Executive & Club</button>
+        <button class="filter-btn room-filter-btn" data-filter="presidential">Presidential</button>
+        <button class="filter-btn room-filter-btn" data-filter="family">Family Residences</button>
+      </div>
+
+      <!-- 10 Comprehensive Room Cards -->
+      <div class="rooms-grid">
+        
+        <!-- Room 1: Presidential Royal Suite -->
+        <article class="room-card room-card-item" data-category="presidential">
+          <div class="room-image-wrap">
+            <span class="room-tag">Presidential Tier</span>
+            <img src="images/photo-1618773928121-c32242e63f39.jpg" alt="Presidential Royal Suite">
+            <div class="room-price-badge">$650 <span>/ night</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Presidential Royal Suite</h3>
+            <p class="room-desc">The crown jewel of Sruthi Hotel. Expansive master salon, marble jacuzzi, private wrap-around terrace, and personal 24/7 royal butler service.</p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 1,400 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> 4 Guests</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> Emperor Bed</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-hot-tub-person"></i> Private Jacuzzi</span>
+              <span class="amenity-pill"><i class="fa-solid fa-bell-concierge"></i> Butler Service</span>
+              <span class="amenity-pill"><i class="fa-solid fa-champagne-glasses"></i> Complimentary Bar</span>
+              <span class="amenity-pill"><i class="fa-solid fa-wifi"></i> 1 Gbps Wi-Fi</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=presidential-suite" class="btn btn-gold btn-sm">Book This Suite</a>
+              <span style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-shield-heart"></i> Direct VIP Rate</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 2: Imperial Penthouse Suite -->
+        <article class="room-card room-card-item" data-category="presidential">
+          <div class="room-image-wrap">
+            <span class="room-tag">Penthouse Tier</span>
+            <img src="images/photo-1582719478250-c89cae4dc85b.jpg" alt="Imperial Penthouse Suite">
+            <div class="room-price-badge">$550 <span>/ night</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Imperial Penthouse Suite</h3>
+            <p class="room-desc">Top-floor luxury featuring floor-to-ceiling skyline glass windows, separate dining parlor for 8, fireplace, and private wine cellar.</p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 1,150 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> 3 Guests</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> Grand King</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-fire"></i> Cozy Fireplace</span>
+              <span class="amenity-pill"><i class="fa-solid fa-wine-glass"></i> Private Cellar</span>
+              <span class="amenity-pill"><i class="fa-solid fa-city"></i> Skyline Balcony</span>
+              <span class="amenity-pill"><i class="fa-solid fa-bath"></i> Marble En-suite</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=imperial-penthouse" class="btn btn-gold btn-sm">Book This Suite</a>
+              <span style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-shield-heart"></i> Direct VIP Rate</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 3: Family Grand Residence -->
+        <article class="room-card room-card-item" data-category="family">
+          <div class="room-image-wrap">
+            <span class="room-tag">Family Haven</span>
+            <img src="images/photo-1596394516093-501ba68a0ba6.jpg" alt="Family Grand Residence">
+            <div class="room-price-badge">$490 <span>/ night</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Family Grand Residence</h3>
+            <p class="room-desc">Dual interconnected bedrooms with a spacious living salon, fully equipped pantry kitchen, and child-friendly luxury amenities.</p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 1,100 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> Up to 5 Guests</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> 1 King + 2 Queens</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-kitchen-set"></i> Gourmet Kitchenette</span>
+              <span class="amenity-pill"><i class="fa-solid fa-gamepad"></i> Entertainment Hub</span>
+              <span class="amenity-pill"><i class="fa-solid fa-shower"></i> Dual Bathrooms</span>
+              <span class="amenity-pill"><i class="fa-solid fa-shirt"></i> Express Laundry</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=family-residence" class="btn btn-gold btn-sm">Book This Suite</a>
+              <span style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-shield-heart"></i> Direct VIP Rate</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 4: Signature Honeymoon Suite -->
+        <article class="room-card room-card-item" data-category="suites">
+          <div class="room-image-wrap">
+            <span class="room-tag">Romance & Luxury</span>
+            <img src="images/photo-1591088398332-8a7791972843.jpg" alt="Signature Honeymoon Suite">
+            <div class="room-price-badge">$420 <span>/ night</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Signature Honeymoon Suite</h3>
+            <p class="room-desc">Romantic ambiance with rose-gold accents, couples aromatherapy jacuzzi, plush four-poster bed, and candlelit balcony dining.</p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 880 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> 2 Adults</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> 4-Poster King</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-heart"></i> Couples Jacuzzi</span>
+              <span class="amenity-pill"><i class="fa-solid fa-champagne-glasses"></i> Welcome Moët</span>
+              <span class="amenity-pill"><i class="fa-solid fa-spa"></i> Aromatherapy Bar</span>
+              <span class="amenity-pill"><i class="fa-solid fa-utensils"></i> Bed Breakfast</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=honeymoon-suite" class="btn btn-gold btn-sm">Book This Suite</a>
+              <span style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-shield-heart"></i> Direct VIP Rate</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 5: Executive Oceanfront Suite -->
+        <article class="room-card room-card-item" data-category="executive">
+          <div class="room-image-wrap">
+            <span class="room-tag">Executive Tier</span>
+            <img src="images/photo-1590490360182-c33d57733427.jpg" alt="Executive Oceanfront Suite">
+            <div class="room-price-badge">$380 <span>/ night</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Executive Oceanfront Suite</h3>
+            <p class="room-desc">Designed for business elites and holidaymakers alike. Features an executive conference lounge corner and panoramic blue vistas.</p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 850 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> 3 Guests</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> California King</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-briefcase"></i> Work Station</span>
+              <span class="amenity-pill"><i class="fa-solid fa-water"></i> Ocean Balcony</span>
+              <span class="amenity-pill"><i class="fa-solid fa-mug-saucer"></i> Nespresso Suite</span>
+              <span class="amenity-pill"><i class="fa-solid fa-wifi"></i> Secure Fiber Net</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=executive-ocean" class="btn btn-gold btn-sm">Book This Suite</a>
+              <span style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-shield-heart"></i> Direct VIP Rate</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 6: Skyline Panoramic Studio -->
+        <article class="room-card room-card-item" data-category="suites">
+          <div class="room-image-wrap">
+            <span class="room-tag">City Views</span>
+            <img src="images/photo-1566665797739-1674de7a421a.jpg" alt="Skyline Panoramic Studio">
+            <div class="room-price-badge">$340 <span>/ night</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Skyline Panoramic Studio</h3>
+            <p class="room-desc">Open-concept loft studio overlooking the shimmering metropolis skyline. High ceilings, art deco lighting, and plush daybed sofa.</p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 720 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> 2 Guests</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> King Bed</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-building"></i> High Floor</span>
+              <span class="amenity-pill"><i class="fa-solid fa-couch"></i> Velvet Lounge</span>
+              <span class="amenity-pill"><i class="fa-solid fa-tv"></i> Smart Entertainment</span>
+              <span class="amenity-pill"><i class="fa-solid fa-martini-glass"></i> Cocktail Bar</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=skyline-studio" class="btn btn-gold btn-sm">Book This Suite</a>
+              <span style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-shield-heart"></i> Direct VIP Rate</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 7: Junior Club Suite -->
+        <article class="room-card room-card-item" data-category="executive">
+          <div class="room-image-wrap">
+            <span class="room-tag">Club Access</span>
+            <img src="images/photo-1595526114035-0d45ed16cfbf.jpg" alt="Junior Club Suite">
+            <div class="room-price-badge">$310 <span>/ night</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Junior Club Suite</h3>
+            <p class="room-desc">Includes complimentary access to the 24th-floor VIP Executive Club Lounge with evening hors d'oeuvres and signature cocktails.</p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 680 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> 2 Guests</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> Plush King</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-crown"></i> VIP Lounge Access</span>
+              <span class="amenity-pill"><i class="fa-solid fa-cocktail"></i> Evening Canapes</span>
+              <span class="amenity-pill"><i class="fa-solid fa-shower"></i> Rain Shower</span>
+              <span class="amenity-pill"><i class="fa-solid fa-wind"></i> Air Purifier</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=junior-club" class="btn btn-gold btn-sm">Book This Suite</a>
+              <span style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-shield-heart"></i> Direct VIP Rate</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 8: Deluxe King Garden Room -->
+        <article class="room-card room-card-item" data-category="deluxe">
+          <div class="room-image-wrap">
+            <span class="room-tag">Deluxe Tier</span>
+            <img src="images/photo-1578683010236-d716f9a3f461.jpg" alt="Deluxe King Garden Room">
+            <div class="room-price-badge">$260 <span>/ night</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Deluxe King Garden Room</h3>
+            <p class="room-desc">Serene courtyard and fountain vistas. Features Italian marble bathroom with soaking tub, Egyptian cotton bedding, and soundproof acoustics.</p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 620 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> 2 Guests</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> King Bed</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-tree"></i> Courtyard Patio</span>
+              <span class="amenity-pill"><i class="fa-solid fa-bath"></i> Soaking Tub</span>
+              <span class="amenity-pill"><i class="fa-solid fa-volume-xmark"></i> Soundproof</span>
+              <span class="amenity-pill"><i class="fa-solid fa-wifi"></i> High-Speed Wi-Fi</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=deluxe-garden" class="btn btn-gold btn-sm">Book This Suite</a>
+              <span style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-shield-heart"></i> Direct VIP Rate</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 9: Grand Luxury Twin Room -->
+        <article class="room-card room-card-item" data-category="deluxe">
+          <div class="room-image-wrap">
+            <span class="room-tag">Twin Beds</span>
+            <img src="images/photo-1566195992011-5f6b21e539aa.jpg" alt="Grand Luxury Twin Room">
+            <div class="room-price-badge">$220 <span>/ night</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Grand Luxury Twin Room</h3>
+            <p class="room-desc">Two custom double beds with ergonomic mattresses, reading corners, marble double vanity, and bespoke luxury toiletries.</p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 550 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> 2 Guests</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> 2 Double Beds</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-sink"></i> Double Vanity</span>
+              <span class="amenity-pill"><i class="fa-solid fa-tv"></i> HD Television</span>
+              <span class="amenity-pill"><i class="fa-solid fa-lock"></i> Digital Safe</span>
+              <span class="amenity-pill"><i class="fa-solid fa-mug-hot"></i> Coffee Maker</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=grand-twin" class="btn btn-gold btn-sm">Book This Suite</a>
+              <span style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-shield-heart"></i> Direct VIP Rate</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 10: Classic Heritage Deluxe -->
+        <article class="room-card room-card-item" data-category="deluxe">
+          <div class="room-image-wrap">
+            <span class="room-tag">Classic Value</span>
+            <img src="images/photo-1611892440504-42a792e24d32.jpg" alt="Classic Heritage Deluxe">
+            <div class="room-price-badge">$190 <span>/ night</span></div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Classic Heritage Deluxe</h3>
+            <p class="room-desc">A refined sanctuary offering our full 5-star standard at an accessible rate. Features plush queen bed, rainfall shower, and complimentary breakfast.</p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 460 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> 2 Guests</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> Queen Bed</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-shower"></i> Rain Shower</span>
+              <span class="amenity-pill"><i class="fa-solid fa-utensils"></i> Free Breakfast</span>
+              <span class="amenity-pill"><i class="fa-solid fa-wifi"></i> Free Wi-Fi</span>
+              <span class="amenity-pill"><i class="fa-solid fa-newspaper"></i> Morning Press</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=classic-deluxe" class="btn btn-gold btn-sm">Book This Suite</a>
+              <span style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600;"><i class="fa-solid fa-shield-heart"></i> Direct VIP Rate</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Room Amenities & Inclusions Feature -->
+  <section class="section-padding" style="background: var(--bg-darker);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Standard in Every Suite</span>
+        <h2 class="section-title">The Sruthi Luxury <span class="gold-gradient-text">Promise</span></h2>
+        <p class="section-desc">
+          Every stay at Sruthi Hotel is augmented with thoughtful 5-star touches designed to elevate your stay beyond expectation.
+        </p>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-icon"><i class="fa-solid fa-bed"></i></div>
+          <h3 class="highlight-title">400-Thread Linens</h3>
+          <p class="highlight-desc">100% Egyptian organic cotton bedding with hypoallergenic goose down pillows.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon"><i class="fa-solid fa-pump-soap"></i></div>
+          <h3 class="highlight-title">Artisanal Bath Amenities</h3>
+          <p class="highlight-desc">Custom organic botanicals from luxury Parisian perfumeries in every marble bath.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3 class="highlight-title">Smart Room Automation</h3>
+          <p class="highlight-desc">Integrated bedside touchscreen tablets for lighting, drapes, and temperature control.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon"><i class="fa-solid fa-utensils"></i></div>
+          <h3 class="highlight-title">24-Hour In-Room Dining</h3>
+          <p class="highlight-desc">Full à la carte gourmet menu served tableside in your suite any hour of the day or night.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner-content">
+      <span class="section-tag">Need Assistance Choosing?</span>
+      <h2>Let Our Concierge Assist Your <span class="gold-gradient-text">Selection</span></h2>
+      <p style="color: var(--text-muted); margin-bottom: 30px;">
+        Contact our 24/7 VIP booking specialists for customized packages, extended stays, and corporate retreats.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 18px; flex-wrap: wrap;">
+        <a href="booking-contact.html" class="btn btn-gold"><i class="fa-solid fa-calendar-check"></i> Book Now</a>
+        <a href="tel:+18005557788" class="btn btn-dark"><i class="fa-solid fa-phone"></i> +1 (800) 555-SRUTHI</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-emblem">S</div>
+          <div class="brand-text">
+            <span class="brand-name">SRUTHI <span>HOTEL</span></span>
+            <span class="brand-sub">Luxury & Suites</span>
+          </div>
+        </a>
+        <p>A landmark of opulence and discrete hospitality. Providing an exceptional stay with bespoke royal suites, gourmet dining, and holistic wellness.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms & Suites</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="whychooseus.html">Why Choose Us</a></li>
+          <li><a href="booking-contact.html">Booking & Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Room Categories</h4>
+        <ul class="footer-links">
+          <li><a href="rooms.html">Presidential Suites</a></li>
+          <li><a href="rooms.html">Imperial Penthouses</a></li>
+          <li><a href="rooms.html">Executive Oceanfront</a></li>
+          <li><a href="rooms.html">Deluxe Garden Rooms</a></li>
+          <li><a href="rooms.html">Family Residences</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Reservations</h4>
+        <p>Direct bookings receive complimentary breakfast and guaranteed early check-in.</p>
+        <ul class="footer-contact" style="margin-top: 15px;">
+          <li><i class="fa-solid fa-phone"></i> +1 (800) 555-SRUTHI</li>
+          <li><i class="fa-solid fa-envelope"></i> reservations@sruthihotel.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div>&copy; 2026 <strong>Sruthi Hotel</strong>. All Rights Reserved.</div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

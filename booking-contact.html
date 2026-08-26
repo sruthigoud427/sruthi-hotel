@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking & Contact | Sruthi Hotel</title>
+  <meta name="description" content="Reserve your luxury suite at Sruthi Hotel or reach our 24/7 concierge desk. Enjoy instant booking calculation, best rate guarantee, and personalized VIP service.">
+  <link rel="stylesheet" href="css/fontawesome/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-left">
+        <div class="topbar-item"><i class="fa-solid fa-location-dot"></i> 742 Grand Boulevard, Luxury Avenue, Metropolis</div>
+        <div class="topbar-item"><i class="fa-solid fa-phone"></i> +1 (800) 555-SRUTHI</div>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-item"><i class="fa-solid fa-bolt"></i> Instant Booking Confirmation</div>
+        <div class="topbar-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-emblem">S</div>
+        <div class="brand-text">
+          <span class="brand-name">SRUTHI <span>HOTEL</span></span>
+          <span class="brand-sub">Luxury & Suites</span>
+        </div>
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="rooms.html" class="nav-link">Rooms</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="whychooseus.html" class="nav-link">Why Choose Us</a>
+        <a href="booking-contact.html" class="nav-link active">Booking & Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="booking-contact.html" class="btn btn-gold btn-sm">Book Now</a>
+        <button class="hamburger-btn" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="brand-emblem">S</div>
+        <div class="brand-text"><span class="brand-name">SRUTHI <span>HOTEL</span></span></div>
+      </div>
+      <button class="drawer-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="rooms.html" class="drawer-link">Rooms & Suites</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+      <a href="gallery.html" class="drawer-link">Photo Gallery</a>
+      <a href="services.html" class="drawer-link">Our Services</a>
+      <a href="whychooseus.html" class="drawer-link">Why Choose Us</a>
+      <a href="booking-contact.html" class="drawer-link active">Booking & Contact</a>
+    </nav>
+  </aside>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="background-image: url('images/photo-1582719478250-c89cae4dc85b.jpg');">
+    <div class="banner-content">
+      <span class="section-tag">Direct Reservations</span>
+      <h1 class="section-title">Book Your Stay & <span class="gold-gradient-text">Contact Us</span></h1>
+      <p class="section-desc">
+        Enjoy our Best Rate Guarantee, flexible cancellation, direct VIP privileges, and 24/7 dedicated guest concierge assistance.
+      </p>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+        <span>Booking & Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Booking & Contact Split Section -->
+  <section class="section-padding" style="background: var(--bg-dark);">
+    <div class="container">
+      
+      <div class="booking-contact-split">
+        
+        <!-- LEFT COLUMN: Interactive Reservation Engine & Live Cost Calculator -->
+        <div class="booking-form-box">
+          <div style="border-bottom: 1px solid var(--border-dark); padding-bottom: 20px; margin-bottom: 24px;">
+            <span class="section-tag" style="margin-bottom: 6px;">Reserve A Suite</span>
+            <h2 style="font-size: 1.8rem;">Online <span class="gold-gradient-text">Reservation</span></h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Fill out your desired stay details below for instant dynamic price estimation and reservation.</p>
+          </div>
+
+          <form id="hotelBookingForm">
+            
+            <!-- Dates Row -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 18px;">
+              <div class="form-group">
+                <label class="form-label" for="checkinDate"><i class="fa-regular fa-calendar-days"></i> Check-in Date *</label>
+                <input type="date" id="checkinDate" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="checkoutDate"><i class="fa-regular fa-calendar-check"></i> Check-out Date *</label>
+                <input type="date" id="checkoutDate" class="form-control" required>
+              </div>
+            </div>
+
+            <!-- Room & Guests Row -->
+            <div style="display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; margin-bottom: 18px;">
+              <div class="form-group">
+                <label class="form-label" for="roomTypeSelect"><i class="fa-solid fa-bed"></i> Accommodation *</label>
+                <select id="roomTypeSelect" class="form-control" required>
+                  <option value="presidential-suite">Presidential Royal Suite ($650 / night)</option>
+                  <option value="imperial-penthouse">Imperial Penthouse Suite ($550 / night)</option>
+                  <option value="family-residence">Family Grand Residence ($490 / night)</option>
+                  <option value="honeymoon-suite">Signature Honeymoon Suite ($420 / night)</option>
+                  <option value="executive-ocean">Executive Oceanfront Suite ($380 / night)</option>
+                  <option value="skyline-studio">Skyline Panoramic Studio ($340 / night)</option>
+                  <option value="junior-club">Junior Club Suite ($310 / night)</option>
+                  <option value="deluxe-garden" selected>Deluxe King Garden Room ($260 / night)</option>
+                  <option value="grand-twin">Grand Luxury Twin Room ($220 / night)</option>
+                  <option value="classic-deluxe">Classic Heritage Deluxe ($190 / night)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="guestsSelect"><i class="fa-solid fa-user-group"></i> Total Guests *</label>
+                <select id="guestsSelect" class="form-control" required>
+                  <option value="1">1 Adult</option>
+                  <option value="2" selected>2 Adults</option>
+                  <option value="3">2 Adults, 1 Child</option>
+                  <option value="4">4 Guests / Family</option>
+                  <option value="5">5+ Guests (VIP Suite)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Guest Personal Details -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 18px;">
+              <div class="form-group">
+                <label class="form-label" for="bookingName"><i class="fa-solid fa-user"></i> Full Name *</label>
+                <input type="text" id="bookingName" class="form-control" placeholder="e.g. Alexander Hamilton" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bookingEmail"><i class="fa-solid fa-envelope"></i> Email Address *</label>
+                <input type="email" id="bookingEmail" class="form-control" placeholder="e.g. alex@example.com" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+              <div class="form-group">
+                <label class="form-label" for="bookingPhone"><i class="fa-solid fa-phone"></i> Phone Number *</label>
+                <input type="tel" id="bookingPhone" class="form-control" placeholder="+1 (555) 019-2834" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bookingCountry"><i class="fa-solid fa-globe"></i> Country / Region</label>
+                <input type="text" id="bookingCountry" class="form-control" placeholder="United States">
+              </div>
+            </div>
+
+            <!-- Optional VIP Add-ons -->
+            <div style="margin-bottom: 20px;">
+              <label class="form-label"><i class="fa-solid fa-wand-magic-sparkles"></i> Optional VIP Enhancements</label>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px;">
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-light); cursor: pointer;">
+                  <input type="checkbox" class="booking-addon-check" data-price="45" data-per-night="true">
+                  <span>Gourmet Buffet Breakfast (+$45/night)</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-light); cursor: pointer;">
+                  <input type="checkbox" class="booking-addon-check" data-price="120" data-per-night="false">
+                  <span>Mercedes Chauffeur Transfer (+$120)</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-light); cursor: pointer;">
+                  <input type="checkbox" class="booking-addon-check" data-price="85" data-per-night="false">
+                  <span>Chilled Moët Champagne on Arrival (+$85)</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-light); cursor: pointer;">
+                  <input type="checkbox" class="booking-addon-check" data-price="150" data-per-night="false">
+                  <span>Couples Aura Spa Treatment (+$150)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 20px;">
+              <label class="form-label" for="specialRequests"><i class="fa-solid fa-comment-dots"></i> Special Requests & Preferences</label>
+              <textarea id="specialRequests" class="form-control" rows="2" placeholder="Dietary preferences, high floor, quiet room, late check-in notice..."></textarea>
+            </div>
+
+            <!-- Dynamic Live Cost Calculator Summary -->
+            <div class="calculator-box">
+              <div style="font-family: var(--font-brand); font-size: 0.95rem; color: var(--gold-light); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; display: flex; justify-content: space-between;">
+                <span><i class="fa-solid fa-receipt"></i> Estimated Cost Summary</span>
+                <span id="calcNights">2 nights</span>
+              </div>
+              <div class="calc-row">
+                <span>Room Rate:</span>
+                <span id="calcRate">$260 / night</span>
+              </div>
+              <div class="calc-row">
+                <span>Accommodation Subtotal:</span>
+                <span id="calcRoomSubtotal">$520</span>
+              </div>
+              <div class="calc-row">
+                <span>Selected VIP Add-ons:</span>
+                <span id="calcAddons">$0</span>
+              </div>
+              <div class="calc-row">
+                <span>Taxes & Luxury Resort Levies (12%):</span>
+                <span id="calcTaxes">$62</span>
+              </div>
+              <div class="calc-row total">
+                <span>Estimated Total:</span>
+                <span id="calcTotal">$582</span>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-gold" style="width: 100%; padding: 16px; font-size: 1rem;">
+              <i class="fa-solid fa-lock"></i> Confirm & Book Reservation
+            </button>
+            <div style="text-align: center; margin-top: 10px; font-size: 0.78rem; color: var(--text-muted);">
+              <i class="fa-solid fa-shield-halved" style="color: var(--gold-primary);"></i> 256-Bit SSL Encrypted. Free cancellation up to 48 hours prior to arrival.
+            </div>
+
+          </form>
+        </div>
+
+        <!-- RIGHT COLUMN: Contact Details, Google Map, WhatsApp & Direct Message -->
+        <div class="contact-info-box">
+          <div>
+            <span class="section-tag" style="margin-bottom: 6px;">Direct Assistance</span>
+            <h2 style="font-size: 1.8rem;">Contact <span class="gold-gradient-text">Information</span></h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Reach our 24/7 executive hospitality desk anytime for bookings, event coordination, or special requirements.</p>
+          </div>
+
+          <!-- Contact Details Grid -->
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div class="contact-item-row">
+              <div class="contact-icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-detail-text">
+                <h4>Hotel Address</h4>
+                <p>742 Grand Boulevard, Luxury Avenue, Metropolis, NY 10001, United States</p>
+              </div>
+            </div>
+
+            <div class="contact-item-row">
+              <div class="contact-icon-circle"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-detail-text">
+                <h4>Phone Numbers</h4>
+                <p>Toll-Free: <a href="tel:+18005557788">+1 (800) 555-SRUTHI</a></p>
+                <p>International: <a href="tel:+12125559900">+1 (212) 555-9900</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item-row">
+              <div class="contact-icon-circle"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-detail-text">
+                <h4>Email Inquiries</h4>
+                <p>Reservations: <a href="mailto:reservations@sruthihotel.com">reservations@sruthihotel.com</a></p>
+                <p>VIP Concierge: <a href="mailto:concierge@sruthihotel.com">concierge@sruthihotel.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item-row">
+              <div class="contact-icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="contact-detail-text">
+                <h4>WhatsApp VIP Chat</h4>
+                <p>Instant chat with our 24/7 Butler Desk: <a href="https://wa.me/18005557788" target="_blank" style="color: #25D366; font-weight: 600;">+1 800 555 7788</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Offline Local Map Visual Component -->
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <h4 style="font-size: 1.05rem;"><i class="fa-solid fa-map-location-dot"></i> Interactive Location Map</h4>
+              <span style="font-size: 0.75rem; color: var(--gold-primary); text-transform: uppercase; letter-spacing: 1px;"><i class="fa-solid fa-satellite"></i> 40.7128° N, 74.0060° W</span>
+            </div>
+            <div class="map-container" style="background: radial-gradient(circle at center, #172237 0%, #0a0f1c 100%); position: relative; border: 1px solid var(--border-gold); display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: hidden; padding: 20px;">
+              <!-- Architectural Grid / Map Lines (SVG) -->
+              <svg width="100%" height="100%" viewBox="0 0 400 220" style="position: absolute; inset: 0; opacity: 0.45;" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+                    <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#C5A880" stroke-width="0.5" stroke-opacity="0.25"/>
+                  </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+                <!-- Avenue Roads -->
+                <path d="M 0 110 Q 200 80 400 110" stroke="#C5A880" stroke-width="4" fill="none" stroke-opacity="0.6"/>
+                <path d="M 200 0 L 200 220" stroke="#C5A880" stroke-width="3" fill="none" stroke-opacity="0.4"/>
+                <path d="M 50 40 Q 150 160 350 180" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="4,4" fill="none" stroke-opacity="0.4"/>
+                <!-- Surrounding Landmarks -->
+                <circle cx="90" cy="65" r="4" fill="#94A3B8"/>
+                <text x="100" y="68" fill="#94A3B8" font-size="9" font-family="sans-serif">Grand Metro Station</text>
+                <circle cx="310" cy="160" r="4" fill="#94A3B8"/>
+                <text x="230" y="175" fill="#94A3B8" font-size="9" font-family="sans-serif">Metropolis Marina</text>
+              </svg>
+
+              <!-- Central Hotel Pin Marker -->
+              <div style="position: relative; z-index: 2; text-align: center; background: rgba(7, 10, 17, 0.9); border: 1px solid var(--gold-primary); padding: 14px 20px; border-radius: var(--radius-md); box-shadow: 0 10px 25px rgba(0,0,0,0.8);">
+                <div style="color: var(--gold-bright); font-size: 1.6rem; margin-bottom: 4px; animation: bounce 2s infinite;">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div style="font-family: var(--font-brand); font-size: 1.05rem; font-weight: 700; color: var(--gold-light); letter-spacing: 1px;">
+                  SRUTHI HOTEL
+                </div>
+                <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 2px;">
+                  742 Grand Boulevard, Luxury Ave
+                </div>
+                <div style="margin-top: 8px; display: inline-flex; align-items: center; gap: 6px; background: rgba(197, 168, 128, 0.15); border: 1px solid var(--border-gold); padding: 3px 10px; border-radius: var(--radius-full); font-size: 0.72rem; color: var(--gold-primary);">
+                  <i class="fa-solid fa-square-parking"></i> Valet Entrance On-Site
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick General Inquiry Form -->
+          <div style="border-top: 1px solid var(--border-dark); padding-top: 20px;">
+            <h4 style="font-size: 1.1rem; margin-bottom: 12px;"><i class="fa-solid fa-paper-plane"></i> Send Direct Message</h4>
+            <form id="hotelContactForm" style="display: flex; flex-direction: column; gap: 12px;">
+              <input type="text" id="contactName" class="form-control" placeholder="Your Name" required>
+              <input type="email" id="contactEmail" class="form-control" placeholder="Your Email" required>
+              <textarea id="contactMessage" class="form-control" rows="3" placeholder="How may our concierge assist you?" required></textarea>
+              <button type="submit" class="btn btn-outline-gold btn-sm" style="align-self: flex-start;">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Luxury Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-emblem">S</div>
+          <div class="brand-text">
+            <span class="brand-name">SRUTHI <span>HOTEL</span></span>
+            <span class="brand-sub">Luxury & Suites</span>
+          </div>
+        </a>
+        <p>A landmark of opulence and discrete hospitality. Providing an exceptional stay with bespoke royal suites, gourmet dining, and holistic wellness.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms & Suites</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="whychooseus.html">Why Choose Us</a></li>
+          <li><a href="booking-contact.html">Booking & Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Check-in Policies</h4>
+        <ul class="footer-links">
+          <li><a href="#">Check-in: 2:00 PM</a></li>
+          <li><a href="#">Check-out: 12:00 PM</a></li>
+          <li><a href="#">Early Arrival on Request</a></li>
+          <li><a href="#">Valet Parking Included</a></li>
+          <li><a href="#">Pet-Friendly Suites Available</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">24/7 Hotline</h4>
+        <p>Instant phone support for urgent bookings and inquiries.</p>
+        <ul class="footer-contact" style="margin-top: 15px;">
+          <li><i class="fa-solid fa-phone"></i> +1 (800) 555-SRUTHI</li>
+          <li><i class="fa-solid fa-envelope"></i> concierge@sruthihotel.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div>&copy; 2026 <strong>Sruthi Hotel</strong>. All Rights Reserved.</div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sruthi Hotel | 5-Star Luxury Hotel & Suites</title>
+  <meta name="description" content="Welcome to Sruthi Hotel. Experience unprecedented luxury, presidential suites, world-class dining, and bespoke hospitality in prime tranquility.">
+  <link rel="stylesheet" href="css/fontawesome/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Luxury Bar -->
+  <div class="topbar">
+    <div class="container topbar-container">
+      <div class="topbar-left">
+        <div class="topbar-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>742 Grand Boulevard, Luxury Avenue, Metropolis</span>
+        </div>
+        <div class="topbar-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+18005557788">+1 (800) 555-SRUTHI</a>
+        </div>
+        <div class="topbar-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:concierge@sruthihotel.com">concierge@sruthihotel.com</a>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>Check-in: 2:00 PM | Check-out: 12:00 PM</span>
+        </div>
+        <div class="topbar-social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="TripAdvisor"><i class="fa-solid fa-compass"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-emblem">S</div>
+        <div class="brand-text">
+          <span class="brand-name">SRUTHI <span>HOTEL</span></span>
+          <span class="brand-sub">Luxury & Suites</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="rooms.html" class="nav-link">Rooms</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="whychooseus.html" class="nav-link">Why Choose Us</a>
+        <a href="booking-contact.html" class="nav-link">Booking & Contact</a>
+      </nav>
+
+      <!-- Nav CTA & Mobile Toggle -->
+      <div class="nav-cta">
+        <a href="booking-contact.html" class="btn btn-gold btn-sm">Book Now</a>
+        <button class="hamburger-btn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="brand-emblem">S</div>
+        <div class="brand-text">
+          <span class="brand-name">SRUTHI <span>HOTEL</span></span>
+        </div>
+      </div>
+      <button class="drawer-close" aria-label="Close Menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="drawer-link active">Home</a>
+      <a href="rooms.html" class="drawer-link">Rooms & Suites</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+      <a href="gallery.html" class="drawer-link">Photo Gallery</a>
+      <a href="services.html" class="drawer-link">Our Services</a>
+      <a href="whychooseus.html" class="drawer-link">Why Choose Us</a>
+      <a href="booking-contact.html" class="drawer-link">Booking & Contact</a>
+    </nav>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <a href="booking-contact.html" class="btn btn-gold" style="width: 100%;">Reserve A Suite</a>
+    </div>
+  </aside>
+
+  <!-- Full-Screen Hero Section with Grand Entrance Background -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-gem"></i> Five-Star Bespoke Hospitality
+      </div>
+      <h1 class="hero-title">
+        Experience Quintessential <span class="gold-gradient-text">Luxury & Serenity</span>
+      </h1>
+      <p class="hero-subtitle">
+        Welcome to Sruthi Hotel, an architectural masterpiece offering opulent private suites, world-acclaimed culinary artistry, and unforgettable royal experiences.
+      </p>
+      <div class="hero-actions">
+        <a href="booking-contact.html" class="btn btn-gold">
+          <i class="fa-solid fa-calendar-check"></i> Book Now
+        </a>
+        <a href="rooms.html" class="btn btn-outline-gold">
+          <i class="fa-solid fa-door-open"></i> Explore Suites
+        </a>
+      </div>
+
+      <!-- Quick Availability Check Bar -->
+      <div class="booking-strip">
+        <form class="booking-strip-form" action="booking-contact.html" method="GET">
+          <div class="form-group">
+            <label class="form-label"><i class="fa-regular fa-calendar"></i> Check-in</label>
+            <input type="date" name="checkin" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><i class="fa-regular fa-calendar-check"></i> Check-out</label>
+            <input type="date" name="checkout" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><i class="fa-solid fa-bed"></i> Room Type</label>
+            <select name="room" class="form-control">
+              <option value="presidential-suite">Presidential Royal Suite ($650)</option>
+              <option value="imperial-penthouse">Imperial Penthouse ($550)</option>
+              <option value="executive-ocean">Executive Ocean View ($380)</option>
+              <option value="deluxe-garden">Deluxe King Garden ($260)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label"><i class="fa-solid fa-user-group"></i> Guests</label>
+            <select name="guests" class="form-control">
+              <option value="1">1 Adult</option>
+              <option value="2" selected>2 Adults</option>
+              <option value="3">2 Adults, 1 Child</option>
+              <option value="4">4 Guests / Family</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-gold" style="height: 48px;">
+            <i class="fa-solid fa-magnifying-glass"></i> Check
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grand Welcome & Entrance Story Section -->
+  <section class="section-padding" style="background: var(--bg-dark);">
+    <div class="container">
+      <div class="welcome-grid">
+        <!-- Visual Entrance Imagery -->
+        <div class="welcome-images">
+          <div class="welcome-badge-floating">
+            <div class="welcome-badge-num">25+</div>
+            <div class="welcome-badge-text">Years of Excellence</div>
+          </div>
+          <!-- Grand Entrance Image -->
+          <img src="images/photo-1566073771259-6a8506099945.jpg" alt="Sruthi Hotel Grand Entrance" class="welcome-img-main">
+          <!-- Grand Lobby Overlay -->
+          <img src="images/photo-1582719478250-c89cae4dc85b.jpg" alt="Sruthi Hotel Grand Lobby" class="welcome-img-sub">
+        </div>
+
+        <!-- Narrative Content -->
+        <div class="welcome-content">
+          <span class="section-tag">Welcome to Prestige</span>
+          <h2 class="section-title">Where Every Detail Reflects <span class="gold-gradient-text">Pure Royalty</span></h2>
+          <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 1.05rem;">
+            Nestled in the city's most coveted quarter, Sruthi Hotel is synonymous with discreet luxury, majestic architecture, and an unwavering commitment to unparalleled hospitality.
+          </p>
+          <p style="color: var(--text-muted); margin-bottom: 24px;">
+            Whether you are visiting for an exclusive business summit, an intimate romantic getaway, or a lavish family retreat, our dedicated concierge team and 5-star amenities guarantee a transcendent stay.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>24/7 Royal Butler Service</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Michelin-Starred Dining</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Panoramic Skyline Views</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Exclusive Wellness Spa & Pool</span>
+            </div>
+          </div>
+
+          <div class="welcome-signature">
+            <div>
+              <div class="signature-name">Sruthi Goud</div>
+              <div class="signature-role">Founder & Managing Director, Sruthi Hotel</div>
+            </div>
+            <a href="about.html" class="btn btn-outline-gold btn-sm" style="margin-left: auto;">
+              Read Our Story <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Rooms Section (EXACTLY 3 ROOMS AS SPECIFIED) -->
+  <section class="section-padding" style="background: var(--bg-darker);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Sanctuaries of Comfort</span>
+        <h2 class="section-title">Featured <span class="gold-gradient-text">Suites & Rooms</span></h2>
+        <p class="section-desc">
+          Immerse yourself in timeless elegance with hand-crafted Italian furnishings, marble en-suites, and bespoke amenities.
+        </p>
+      </div>
+
+      <div class="rooms-grid">
+        <!-- Room 1: Presidential Royal Suite -->
+        <article class="room-card">
+          <div class="room-image-wrap">
+            <span class="room-tag">Flagship Suite</span>
+            <img src="images/photo-1618773928121-c32242e63f39.jpg" alt="Presidential Royal Suite">
+            <div class="room-price-badge">
+              $650 <span>/ night</span>
+            </div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Presidential Royal Suite</h3>
+            <p class="room-desc">
+              Expansive 1,400 sq.ft private penthouse suite with king-size master bedroom, private infinity terrace, marble jacuzzi, and personal 24/7 butler.
+            </p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 1,400 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> Up to 4 Guests</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> Emperor King</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-wifi"></i> Ultra Wi-Fi</span>
+              <span class="amenity-pill"><i class="fa-solid fa-hot-tub-person"></i> Private Jacuzzi</span>
+              <span class="amenity-pill"><i class="fa-solid fa-martini-glass"></i> Mini Bar</span>
+              <span class="amenity-pill"><i class="fa-solid fa-utensils"></i> Gourmet Breakfast</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=presidential-suite" class="btn btn-gold btn-sm">Book This Suite</a>
+              <a href="rooms.html" class="btn btn-dark btn-sm">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 2: Executive Oceanfront Suite -->
+        <article class="room-card">
+          <div class="room-image-wrap">
+            <span class="room-tag">Panoramic View</span>
+            <img src="images/photo-1590490360182-c33d57733427.jpg" alt="Executive Oceanfront Suite">
+            <div class="room-price-badge">
+              $380 <span>/ night</span>
+            </div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Executive Oceanfront Suite</h3>
+            <p class="room-desc">
+              Sweeping panoramic sunset views with an expansive sun terrace, designer workspace, walk-in dressing lounge, and rainfall spa bath.
+            </p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 850 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> Up to 3 Guests</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> California King</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-water"></i> Ocean Balcony</span>
+              <span class="amenity-pill"><i class="fa-solid fa-tv"></i> 65" 4K OLED</span>
+              <span class="amenity-pill"><i class="fa-solid fa-mug-hot"></i> Nespresso Bar</span>
+              <span class="amenity-pill"><i class="fa-solid fa-shield"></i> Biometric Safe</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=executive-ocean" class="btn btn-gold btn-sm">Book This Suite</a>
+              <a href="rooms.html" class="btn btn-dark btn-sm">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 3: Deluxe King Garden Suite -->
+        <article class="room-card">
+          <div class="room-image-wrap">
+            <span class="room-tag">Popular Choice</span>
+            <img src="images/photo-1578683010236-d716f9a3f461.jpg" alt="Deluxe King Garden Suite">
+            <div class="room-price-badge">
+              $260 <span>/ night</span>
+            </div>
+          </div>
+          <div class="room-info">
+            <h3 class="room-title">Deluxe King Garden Suite</h3>
+            <p class="room-desc">
+              Tranquil courtyard vistas surrounded by botanical gardens. Features plush Egyptian cotton linens, marble bathroom, and private lounge corner.
+            </p>
+            <div class="room-meta">
+              <div class="room-meta-item"><i class="fa-solid fa-maximize"></i> 620 sq ft</div>
+              <div class="room-meta-item"><i class="fa-solid fa-user-group"></i> 2 Guests</div>
+              <div class="room-meta-item"><i class="fa-solid fa-bed"></i> Plush King</div>
+            </div>
+            <div class="room-amenities-tags">
+              <span class="amenity-pill"><i class="fa-solid fa-tree"></i> Garden Terrace</span>
+              <span class="amenity-pill"><i class="fa-solid fa-bath"></i> Deep Soaking Tub</span>
+              <span class="amenity-pill"><i class="fa-solid fa-wind"></i> Climate Control</span>
+              <span class="amenity-pill"><i class="fa-solid fa-volume-xmark"></i> Soundproofed</span>
+            </div>
+            <div class="room-footer">
+              <a href="booking-contact.html?room=deluxe-garden" class="btn btn-gold btn-sm">Book This Suite</a>
+              <a href="rooms.html" class="btn btn-dark btn-sm">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- View All Rooms Button linking to rooms.html -->
+      <div class="text-center" style="margin-top: 50px;">
+        <a href="rooms.html" class="btn btn-outline-gold" style="padding: 16px 40px; font-size: 1rem;">
+          <i class="fa-solid fa-list-ul"></i> View All Rooms & Suites (10 Types)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hotel Highlights & Amenities -->
+  <section class="section-padding" style="background: var(--bg-dark);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Unrivaled Hospitality</span>
+        <h2 class="section-title">Hotel <span class="gold-gradient-text">Highlights</span></h2>
+        <p class="section-desc">
+          Indulge in an elevated lifestyle curated exclusively for our distinguished patrons.
+        </p>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <h3 class="highlight-title">Signature Dining</h3>
+          <p class="highlight-desc">
+            Gastronomic perfection orchestrated by world-renowned executive chefs with wine pairings.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <i class="fa-solid fa-spa"></i>
+          </div>
+          <h3 class="highlight-title">Aura Wellness Spa</h3>
+          <p class="highlight-desc">
+            Holistic hydrotherapy, Ayurvedic massages, steam chambers, and private meditation lounges.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <i class="fa-solid fa-water-ladder"></i>
+          </div>
+          <h3 class="highlight-title">Rooftop Infinity Pool</h3>
+          <p class="highlight-desc">
+            Temperature-regulated sky pool featuring private cabanas and handcrafted sunset cocktails.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-icon">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <h3 class="highlight-title">VIP Chauffeur & Helipad</h3>
+          <p class="highlight-desc">
+            Complimentary airport transfers in Rolls-Royce & Mercedes Maybach fleets upon request.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Multiple Image Section: Visual Hotel Experience Showcase -->
+  <section class="section-padding" style="background: var(--bg-darker);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Visual Odyssey</span>
+        <h2 class="section-title">Moments of <span class="gold-gradient-text">Magnificence</span></h2>
+        <p class="section-desc">
+          A glimpse into the architectural splendor, lavish interiors, and serene courtyards of Sruthi Hotel.
+        </p>
+      </div>
+
+      <div class="experience-grid">
+        <div class="exp-item exp-item-1">
+          <img src="images/photo-1542314831-068cd1dbfeeb.jpg" alt="Sruthi Hotel Facade & Entrance at Dusk">
+          <div class="exp-overlay">
+            <span class="exp-tag">The Grand Facade</span>
+            <h3 class="exp-title">Illuminated Palace Entrance</h3>
+          </div>
+        </div>
+        <div class="exp-item exp-item-2">
+          <img src="images/photo-1517248135467-4c7edcad34c4.jpg" alt="Fine Dining Restaurant">
+          <div class="exp-overlay">
+            <span class="exp-tag">Gastronomy</span>
+            <h3 class="exp-title">The Golden Palm Restaurant</h3>
+          </div>
+        </div>
+        <div class="exp-item exp-item-3">
+          <img src="images/photo-1571896349842-33c89424de2d.jpg" alt="Rooftop Pool">
+          <div class="exp-overlay">
+            <span class="exp-tag">Recreation</span>
+            <h3 class="exp-title">Sunset Infinity Sky Pool</h3>
+          </div>
+        </div>
+        <div class="exp-item exp-item-4">
+          <img src="images/photo-1584132967334-10e028bd69f7.jpg" alt="Lobby Lounge">
+          <div class="exp-overlay">
+            <span class="exp-tag">Ambience</span>
+            <h3 class="exp-title">Crystal Chandelier Lounge</h3>
+          </div>
+        </div>
+        <div class="exp-item exp-item-5">
+          <img src="images/photo-1540555700478-4be289fbecef.jpg" alt="Aura Spa Sanctuary">
+          <div class="exp-overlay">
+            <span class="exp-tag">Wellness</span>
+            <h3 class="exp-title">Aura Hydro Spa Sanctuary</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 36px;">
+        <a href="gallery.html" class="btn btn-gold btn-sm">
+          <i class="fa-solid fa-images"></i> Explore Full Photo Gallery (24+ Photos)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest Reviews & Testimonials Section -->
+  <section class="section-padding" style="background: var(--bg-dark);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">Words From <span class="gold-gradient-text">Our Honored Guests</span></h2>
+        <p class="section-desc">
+          Discover why world leaders, celebrities, and discerning travelers choose Sruthi Hotel time and again.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "An utterly sensational hotel. From the bespoke greeting at the grand entrance to the flawless butler service in the Presidential Suite, Sruthi Hotel defines modern luxury."
+          </p>
+          <div class="review-user">
+            <img src="images/photo-1534528741775-53994a69daeb.jpg" alt="Lady Eleanor Vance" class="user-avatar">
+            <div>
+              <div class="user-name">Lady Eleanor Vance</div>
+              <div class="user-origin">London, United Kingdom</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "The culinary experience at The Golden Palm and the panoramic views from the rooftop pool were extraordinary. The attention to privacy and detail is unmatched anywhere in the world."
+          </p>
+          <div class="review-user">
+            <img src="images/photo-1507003211169-0a1dd7228f2d.jpg" alt="Marcus Sterling" class="user-avatar">
+            <div>
+              <div class="user-name">Marcus Sterling</div>
+              <div class="user-origin">Zurich, Switzerland</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "Sruthi Goud and her hospitality team have crafted a sanctuary of absolute bliss. Our anniversary stay was nothing short of perfection. We cannot wait to return next season!"
+          </p>
+          <div class="review-user">
+            <img src="images/photo-1573496359142-b8d87734a5a2.jpg" alt="Dr. Sophia Chen" class="user-avatar">
+            <div>
+              <div class="user-name">Dr. Sophia Chen</div>
+              <div class="user-origin">Singapore</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner-content">
+      <span class="section-tag">Your Royal Escape Awaits</span>
+      <h2>Reserve Your Extraordinary <span class="gold-gradient-text">Sanctuary Today</span></h2>
+      <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">
+        Enjoy complimentary champagne, guaranteed late check-out, and exclusive dining privileges when you book directly with us.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 18px; flex-wrap: wrap;">
+        <a href="booking-contact.html" class="btn btn-gold">
+          <i class="fa-solid fa-calendar-check"></i> Book Now
+        </a>
+        <a href="tel:+18005557788" class="btn btn-dark">
+          <i class="fa-solid fa-phone"></i> Call VIP Concierge
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-emblem">S</div>
+          <div class="brand-text">
+            <span class="brand-name">SRUTHI <span>HOTEL</span></span>
+            <span class="brand-sub">Luxury & Suites</span>
+          </div>
+        </a>
+        <p>
+          A landmark of opulence and discrete hospitality. Providing an exceptional stay with bespoke royal suites, gourmet dining, and holistic wellness.
+        </p>
+        <div class="topbar-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms & Suites</a></li>
+          <li><a href="about.html">About Sruthi Hotel</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="services.html">Guest Services</a></li>
+          <li><a href="whychooseus.html">Why Choose Us</a></li>
+          <li><a href="booking-contact.html">Booking & Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Hotel Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">24/7 Fine Room Service</a></li>
+          <li><a href="services.html">The Golden Palm Restaurant</a></li>
+          <li><a href="services.html">Aura Wellness & Spa</a></li>
+          <li><a href="services.html">Grand Event Ballroom</a></li>
+          <li><a href="services.html">VIP Airport Chauffeur</a></li>
+          <li><a href="services.html">Valet Parking & EV Charging</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">VIP Privilege Club</h4>
+        <p style="margin-bottom: 12px;">Subscribe for exclusive suite offers, seasonal invitations, and complimentary upgrades.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email Address" required>
+          <button type="submit" class="btn btn-gold btn-sm">Join</button>
+        </form>
+        <ul class="footer-contact" style="margin-top: 24px;">
+          <li><i class="fa-solid fa-location-dot"></i> 742 Grand Blvd, Luxury Ave, Metropolis</li>
+          <li><i class="fa-solid fa-phone"></i> +1 (800) 555-SRUTHI</li>
+          <li><i class="fa-solid fa-envelope"></i> reservations@sruthihotel.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>
+        &copy; 2026 <strong>Sruthi Hotel</strong>. All Rights Reserved. Crafted for Ultimate Luxury.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Security Statement</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
